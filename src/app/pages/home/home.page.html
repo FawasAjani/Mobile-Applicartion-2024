@@ -1,0 +1,53 @@
+<ion-content [fullscreen]="true">
+  <!--This is the introduction card. Gives a short explanation for the app-->
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>App Introduction</ion-card-title>
+      <img src="assets/roscommon.png" alt="roscommon-Image" style="max-width: 300px; height: auto;">
+    </ion-card-header>
+    <ion-card-content>
+      Welcome to our Roscommon visitor app! Whether you're here for a weekend getaway or a longer stay,
+      we have a variety of experiences to make your time in Roscommon memorable. Explore our sections,
+      each offering unique insights into the heart of this beautiful region. From outdoor adventures to culinary delights,
+      we're here to enhance your Roscommon experience. Enjoy your journey and let us be your guide.
+    </ion-card-content>
+  </ion-card>
+
+  <!--This card leads the user to the Activities page. It also gives a brief explanation of what you could do-->
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Activities</ion-card-title>
+      <img src="assets/activities.png" alt="activities-Image" style="max-width: 300px; height: auto;">
+    </ion-card-header>
+    <ion-card-content>
+      Clicking the button below for a curated list of activities designed to enrich your stay. From adventurous outings to escapes, discover the best ways to make your visit unforgettable. Let the exploration begin!
+    </ion-card-content>
+    <ion-button fill="clear" (click)="activities()">Activities</ion-button><!--This button leads the user to the next page-->
+  </ion-card>
+
+  <!--This card leads the user to the foods page. It also gives a brief explanation-->
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Foods</ion-card-title>
+      <img src="assets/Breakfast.png" alt="food-Image" style="max-width: 300px; height: auto;">
+    </ion-card-header>
+    <ion-card-content>
+      Clicking the button below will take you to a page detailing all of the different varieties
+      of foods that you can find in Roscommon.
+    </ion-card-content>
+    <ion-button fill="clear" (click)="food()">Foods</ion-button><!--This button leads the user to the next page-->
+  </ion-card>
+
+  <!--This card leads the user to the nightlife page. It also gives a brief explanation-->
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Nightlife</ion-card-title>
+      <img src="assets/party.png" alt="nightlife-Image" style="max-width: 300px; height: auto;">
+    </ion-card-header>
+    <ion-card-content>
+      Clicking the button below will take you to a page showing you the wild and exciting nightlife
+      to be found in the heart of beautiful Roscommon!
+    </ion-card-content>
+    <ion-button fill="clear" (click)="nightlife()">Nightlife</ion-button><!--This button leads the user to the next page-->
+  </ion-card>
+</ion-content>

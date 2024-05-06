@@ -1,0 +1,69 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title class="ion-text-center jump" style="font-size: 24px; font-weight: bold; color: #646060;">Food &amp; Restaurants</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Foods and Restaurants</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      When it comes to dining in Roscommon, you're spoiled for choice with a large variety of food options. Among the classics, you'll find the beloved Irish Breakfast, a staple of the local community. Whether you're in the heart of Roscommon town or exploring its picturesque outskirts, there's no shortage of eateries ready to serve up this hearty meal. Here are some top recommendations for where to enjoy an authentic Irish Breakfast experience in Roscommon.
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Burger King Athlone</ion-card-title>
+      <img src="assets/king.png" alt="Burgerking-Image" style="max-width: 300px; height: auto;">
+    </ion-card-header>
+    <ion-card-content>
+      Indulge in the familiar comfort of Burger King, nestled within the bustling Golden Island shopping complex in Athlone. As you navigate through your shopping spree, the tantalizing aroma of flame-grilled burgers beckons you to refuel and recharge. Whether you crave the iconic Whopper or prefer to savor the crispy satisfaction of chicken nuggets, Burger King offers an array of mouthwatering options to satisfy your hunger pangs. With its convenient location and wallet-friendly prices, Burger King at Golden Island ensures that your shopping experience is not just fulfilling but also delicious.
+    </ion-card-content>
+    <!--Button to take the user to the website of Burger King-->
+    <ion-button fill="clear" href="https://www.whopper.ie/">CLICK FOR MORE</ion-button>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Soho Asian Street Food</ion-card-title>
+      <img src="assets/soho-asian-street-food.png" alt="Soho-Asian-Street-Food-Image" style="max-width: 300px; height: auto;">
+    </ion-card-header>
+    <ion-card-content>
+      Soho Restaurant beckons with its tantalizing aromas and welcoming atmosphere. As you stroll through The Crescent, you'll find this culinary gem, offering a delightful fusion of Asian flavors. From freshly prepared sushi to savory stir-fries, each dish at Soho Restaurant is a masterpiece, crafted with precision and passion. Whether you're a fan of Asian cuisine or simply seeking a memorable dining experience, Ken's Restaurant in The Crescent promises to satisfy your cravings and leave you longing for more.
+    </ion-card-content>
+    <!--Button to take the user to the website of Soho Asian Street Food -->
+    <ion-button fill="clear" href="https://sohoasianstreetfood.ie/">CLICK FOR MORE</ion-button>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Apache</ion-card-title>
+      <img src="assets/apache.png" alt="Apache-Image" style="max-width: 300px; height: auto;">
+    </ion-card-header>
+    <ion-card-content>
+      Apache kebabs are legendary! They've got that perfect blend of spices and flavors that just make them irresistible. Plus, they're so filling, you can chow down on one and feel completely satisfied. Whether you're grabbing a quick bite or sitting down for a feast, Apache kebabs always hit the spot!
+    </ion-card-content>
+    <!--Button to take the user to the website of The Apache-->
+    <ion-button fill="clear" href="https://www.apache.ie/">CLICK FOR MORE</ion-button>
+  </ion-card>
+</ion-content>
+
+<style>
+ @keyframes jump {
+  0% { transform: translateY(0); }   /* At the beginning (0% of the animation duration), the element is translated 0px vertically */
+  50% { transform: translateY(-10px); }   /* Halfway through the animation (50% of the duration), the element is translated 10px upward */
+  100% { transform: translateY(0); }   /* At the end of the animation (100% of the duration), the element returns to its original vertical position.I learned how to use the keyframe from this website https://developer.mozilla.org/en-US/docs/Web/CSS/@keyframes*/
+}
+
+.jump {
+  animation: jump 1s infinite;   /* Apply the animation named "jump" to elements with the class "jump", with a duration of 1 second and repeating infinitely */
+}
+
+</style>
+

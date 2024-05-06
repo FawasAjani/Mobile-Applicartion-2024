@@ -1,0 +1,37 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title class="ion-text-center">Weather</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card *ngIf="cityName">
+    <ion-item lines="none">
+      <p>Today's Weather Report</p>
+      <ion-label slot="end">{{ todayDate | date:"EEE dd MMM" }}</ion-label><!-- Date formatting -->
+    </ion-item>
+    <ion-item>
+      <span>{{ (weatherTemp.temp - 273.15).toFixed(0) }} Degrees Celsius</span><!-- Weather from Kelvin to Celsius -->
+      <img [src]="weatherIcon" slot="end"><!-- Weather icon -->
+    </ion-item>
+    <ion-item>
+      <ion-icon name="location"></ion-icon>
+      <span>{{ cityName }}</span> <!-- Bind to cityName property for dynamic location -->
+    </ion-item>
+  </ion-card>
+
+  <ion-card *ngIf="weatherTemp">
+    <ion-item>
+      <span>Maximum Temperature</span>
+      <span slot="end">{{ (weatherTemp.temp_max - 273.15).toFixed(0) }}</span><!-- Maximum temperature and converts it to Celsius -->
+    </ion-item>
+    <ion-item>
+      <span>Minimum Temperature</span>
+      <span slot="end">{{ (weatherTemp.temp_min - 273.15).toFixed(0) }}</span><!-- Minimum temperature and converts it to Celsius -->
+    </ion-item>
+  </ion-card>
+</ion-content>
+
